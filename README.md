@@ -3,3 +3,6 @@
 + 빨강
 * 노랑
 - 빼기
+<div align="center">
+  <a href="https://github.com/25gs10326-png/2026-AI/blob/main/hello.py">
+</div>
