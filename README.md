@@ -5,7 +5,7 @@
 - 빼기
 <div align="center">
   <a href="https://github.com/firecrawl/firecrawl/blob/main/LICENSE">
-    <img src="https://img.shields.io/github/license/firecrawl/firecrawl" alt="License">
+    <img src="https://github.com/25gs10326-png/2026-AI/blob/main/hello.py" alt="License">
   </a>
   <a href="https://pepy.tech/project/firecrawl-py">
     <img src="https://static.pepy.tech/badge/firecrawl-py" alt="Downloads">
