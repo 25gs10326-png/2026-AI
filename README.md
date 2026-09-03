@@ -5,4 +5,5 @@
 - 빼기
 <div align="center">
   <a href="https://github.com/25gs10326-png/2026-AI/blob/main/hello.py">
+    <img src="https://img.shields.io/badge/py-you_like-green" alt="License">
 </div>
