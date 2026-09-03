@@ -1,0 +1,15 @@
+/workspaces/2026-AI/ReinforcementLearning/bin/Debug/net10.0/ReinforcementLearning
+/workspaces/2026-AI/ReinforcementLearning/bin/Debug/net10.0/ReinforcementLearning.deps.json
+/workspaces/2026-AI/ReinforcementLearning/bin/Debug/net10.0/ReinforcementLearning.runtimeconfig.json
+/workspaces/2026-AI/ReinforcementLearning/bin/Debug/net10.0/ReinforcementLearning.dll
+/workspaces/2026-AI/ReinforcementLearning/bin/Debug/net10.0/ReinforcementLearning.pdb
+/workspaces/2026-AI/ReinforcementLearning/obj/Debug/net10.0/ReinforcementLearning.GeneratedMSBuildEditorConfig.editorconfig
+/workspaces/2026-AI/ReinforcementLearning/obj/Debug/net10.0/ReinforcementLearning.AssemblyInfoInputs.cache
+/workspaces/2026-AI/ReinforcementLearning/obj/Debug/net10.0/ReinforcementLearning.AssemblyInfo.cs
+/workspaces/2026-AI/ReinforcementLearning/obj/Debug/net10.0/ReinforcementLearning.csproj.CoreCompileInputs.cache
+/workspaces/2026-AI/ReinforcementLearning/obj/Debug/net10.0/ReinforcementLearning.sourcelink.json
+/workspaces/2026-AI/ReinforcementLearning/obj/Debug/net10.0/ReinforcementLearning.dll
+/workspaces/2026-AI/ReinforcementLearning/obj/Debug/net10.0/refint/ReinforcementLearning.dll
+/workspaces/2026-AI/ReinforcementLearning/obj/Debug/net10.0/ReinforcementLearning.pdb
+/workspaces/2026-AI/ReinforcementLearning/obj/Debug/net10.0/ReinforcementLearning.genruntimeconfig.cache
+/workspaces/2026-AI/ReinforcementLearning/obj/Debug/net10.0/ref/ReinforcementLearning.dll
