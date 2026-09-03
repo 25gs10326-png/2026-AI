@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Threading;
 
 class Program
 {
@@ -7,17 +8,21 @@ class Program
         char[,] map =
         {
             { '#', '#', '#', '#', '#', '#', '#' },
-            { '#', 'A', ' ', ' ', '#', ' ', '#' },
+            { '#', ' ', ' ', ' ', '#', ' ', '#' },
             { '#', ' ', '#', ' ', '#', ' ', '#' },
             { '#', ' ', '#', ' ', ' ', ' ', '#' },
             { '#', ' ', '#', '#', '#', ' ', '#' },
             { '#', ' ', ' ', ' ', ' ', 'G', '#' },
             { '#', '#', '#', '#', '#', '#', '#' }
         };
+        Random random = new Random();
 
-        int playerX = 1;
-        int playerY = 1;
 
+        int aiX = 1;
+        int aiY = 1;
+
+        int steps = 0;
+        
         while (true)
         {
             Console.Clear();
@@ -27,7 +32,7 @@ class Program
             {
                 for (int x = 0; x < map.GetLength(1); x++)
                 {
-                    if (x == playerX && y == playerY)
+                    if (x == aiX && y == aiY)
                         Console.Write('A');
                     else
                         Console.Write(map[y, x]);
@@ -37,39 +42,44 @@ class Program
             }
 
             Console.WriteLine();
-            Console.WriteLine("WASD로 움직이세요.");
 
-            ConsoleKey key = Console.ReadKey(true).Key;
+            if (map[aiY, aiX] == 'G')
+            {
+                Console.WriteLine("🎉 AI가 목표에 도착했습니다!");
+                break;
+            }
 
-            int nextX = playerX;
-            int nextY = playerY;
+            int action = random.Next(4);
 
-            if (key == ConsoleKey.W)
+            int nextX = aiX;
+            int nextY = aiY;
+
+            if (action == 0)
                 nextY--;
 
-            if (key == ConsoleKey.S)
+            else if (action == 1)
                 nextY++;
 
-            if (key == ConsoleKey.A)
+            else if (action == 2)
                 nextX--;
 
-            if (key == ConsoleKey.D)
+            else if (action == 3)
                 nextX++;
 
             // 벽이 아니면 이동
             if (map[nextY, nextX] != '#')
             {
-                playerX = nextX;
-                playerY = nextY;
+                aiX = nextX;
+                aiY = nextY;
             }
 
-            // 목표 도착
-            if (map[playerY, playerX] == 'G')
-            {
-                Console.Clear();
-                Console.WriteLine("목표 도착!");
-                break;
-            }
+            steps++;
+
+            // 움직이는 모습 보기
+            Thread.Sleep(100);
+
         }
+        Console.WriteLine();
+        Console.WriteLine("프로그램 종료");
     }
 }
